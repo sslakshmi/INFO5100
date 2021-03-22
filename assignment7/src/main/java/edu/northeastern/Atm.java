@@ -5,10 +5,9 @@ import java.util.Map;
 
 public class Atm {
     private double availableAmountInMachine;
-    public static final double TRANSACTION_FEE = 10;
+    public static final double TRANSACTION_FEE = 2;
     private Map<Integer, UserData> userData;
 
-    //TODO - Is these setup during app initializing phase?
     public Atm(double availableAmountInMachine) {
         this.availableAmountInMachine = availableAmountInMachine;
         this.userData = new HashMap<>();

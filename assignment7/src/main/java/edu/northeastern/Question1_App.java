@@ -5,16 +5,9 @@ import java.util.Scanner;
 public class Question1_App {
 
     public static void main(String[] args) {
-        //TODO- Ask new user/ current user - Is this shown again after selecting EXIT from menu. If so, what should be
-        //the mechanism to exit from the app completely?
-        //TODO - What is current user?
-
-
         //=======================================================================================
         Scanner scanner = new Scanner(System.in);
         int userType = 0, currentUserOperation;
-        int userSelection;
-        boolean quit = false;
         User user;
         UserData userData = null;
         String name, address, phoneNumber, password;
@@ -44,7 +37,6 @@ public class Question1_App {
             System.out.println("2. Current User");
             System.out.println("3. Exit");
             System.out.println("=".repeat(width));
-            //TODO - Add exception handling
             try {
                 userType = scanner.nextInt();
             } catch (Exception e) {

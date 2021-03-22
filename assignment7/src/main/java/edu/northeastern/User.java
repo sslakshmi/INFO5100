@@ -5,7 +5,6 @@ public class User {
     private final int age;
     private final String address;
     private final String phoneNumber;
-    //TODO - what is the type for bankAccountNumber?
     private int bankAccountNumber;
 
     public User(String name, int age, String address, String phoneNumber) {
@@ -16,11 +15,7 @@ public class User {
         this.bankAccountNumber = 0;
     }
 
-    /**
-     * @return
-     */
     public int generateAccountNumber() {
-        //TODO - Don't overwrite existing acc no. - (Done)
         if (this.bankAccountNumber == 0) {
             bankAccountNumber = (int) ((Math.random() * 9000) + 1000);
         }
